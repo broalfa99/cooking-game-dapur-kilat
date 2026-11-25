@@ -1,0 +1,42 @@
+/* Dapur Kilat — page chrome around the canvas. The game itself is canvas. */
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: #2b1d10; }
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: #fff3d6;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.stage { width: min(1280px, 100vw); }
+canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #f7e8c9;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+.underbar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 10px 12px;
+  font-size: 13px;
+  color: #e8dcc0;
+  flex-wrap: wrap;
+}
+.underbar button {
+  background: #3f9e4d;
+  color: #fff;
+  border: 0;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.underbar button:hover { background: #4cb45c; }
+.underbar .hint { flex: 1; min-width: 240px; }
+.underbar .credit { opacity: 0.7; }
